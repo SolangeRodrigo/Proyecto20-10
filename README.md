@@ -9,6 +9,14 @@ Aplicación web con una interfaz moderna, intuitiva y minimalista, inspirada en 
 
 ## 🛠️ Tech Stack
 
+### Architecture
+- Scraming ARCHITECT
+--- Folder: Features\Curso
+--- Component\Ui
+
+### Idea
+- Roadmap de Curso (Scrapping de Cursos de Udemy)
+
 ### 🎨 Frontend
 - ⚛️ **React 19** — Construcción de interfaces.
 - ⚡ **Vite** — Entorno de desarrollo y build.
@@ -50,6 +58,8 @@ Aplicación web con una interfaz moderna, intuitiva y minimalista, inspirada en 
 ---
 
 ## 🎯 Objetivo del proyecto
+
+Mobile First.
 
 Desarrollar una aplicación web full stack que integre autenticación, operaciones CRUD y persistencia de datos, utilizando herramientas modernas para el frontend, backend e infraestructura.
 
