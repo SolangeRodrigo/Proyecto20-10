@@ -23,7 +23,7 @@ Aplicación web con una interfaz moderna, intuitiva y minimalista, inspirada en 
 - 📦 **pnpm** — Gestión de paquetes.
 
 ### ⚙️ Backend
-- 🚀 **Fastify** — Framework para la API.
+- 🚀 **FastAPI** — Framework para la API.
 - 🐍 **uv** — Gestión de dependencias y entorno Python.
 
 ### 🗄️ Base de datos
