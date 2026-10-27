@@ -1,17 +1,41 @@
-## Como levantar el proyecto
+## Cómo levantar el proyecto
 
-El entorno de desarrollo se esta preparando. Al completar T2, T3 y T4, se podra iniciar con Docker Compose:
+### Requisitos
+
+- Docker Desktop instalado y en ejecución.
+- Git.
+
+### Instalación
+
+Cloná el repositorio y entrá en la carpeta:
+
+```bash
+git clone https://github.com/SolangeRodrigo/Proyecto20-10.git
+cd Proyecto20-10
+```
+
+Copiá el archivo de variables de entorno:
 
 ```bash
 cp .env.example .env
-docker compose up
 ```
 
-Servicios previstos:
-- Frontend: http://localhost:5173
-- Backend: http://localhost:8000/health
+Iniciá los servicios de desarrollo:
 
----
+```bash
+docker compose up --build
+```
+
+### Servicios disponibles
+
+- **Frontend:** http://localhost:5173
+- **Backend:** http://localhost:8000/health
+- **Cursos:** http://localhost:8000/cursos
+- **Documentación de la API:** http://localhost:8000/docs
+
+Para detener los servicios, ejecutá `Ctrl + C`. Para eliminarlos después, ejecutá `docker compose down`.
+
+La base de datos utiliza un volumen persistente de Docker.
 
 # Proyecto20-10
 
