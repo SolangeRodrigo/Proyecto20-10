@@ -1,80 +1,68 @@
-# 🚀 Proyecto20-10
+# Proyecto20-10
 
-> ✨ **Plataforma de gestión de cursos**  
-> 🗓️ Proyecto iniciado el **20/10/2026**
+> WebApp de gestión de comunidad de cursos: catálogo comunitario de cursos gratuitos y roadmaps personales de aprendizaje.
+>
+> **Estado:** 📚 Documentación (Instancia A) — desarrollo pendiente de aprobación docente.
 
-Aplicación web con una interfaz moderna, intuitiva y minimalista, inspirada en el estilo visual de **Google Material Design**. Incluye autenticación de usuarios, gestión de cursos y una experiencia de navegación simple y fluida.
-
----
-
-## 🛠️ Tech Stack
-
-### Architecture
-- Scraming ARCHITECT
---- Folder: Features\Curso
---- Component\Ui
-
-### Idea
-- Roadmap de Curso (Scrapping de Cursos de Udemy)
-
-### 🎨 Frontend
-- ⚛️ **React 19** — Construcción de interfaces.
-- ⚡ **Vite** — Entorno de desarrollo y build.
-- 📦 **pnpm** — Gestión de paquetes.
-
-### ⚙️ Backend
-- 🚀 **Fastify** — Framework para la API.
-- 🐍 **uv** — Gestión de dependencias y entorno Python.
-
-### 🗄️ Base de datos
-- 🐘 **PostgreSQL** — Persistencia y gestión de datos.
-
-### 🐳 Infraestructura
-- 📦 **Docker** — Contenedorización de servicios.
-- 🔗 **Docker Compose** — Orquestación del entorno de desarrollo.
+**Stack previsto:** React 19 + Vite + pnpm · FastAPI + uv · PostgreSQL 18.6 · Docker Compose (desarrollo)
 
 ---
 
-## ✨ Funcionalidades
+## Qué hace
 
-### 🔐 Autenticación y seguridad
-- 🔑 **Login** de usuarios.
-- 📝 **Registro** de nuevas cuentas.
-- 🔄 **Recuperación de contraseña**.
-- 🛡️ **Rate limiting** para limitar solicitudes y ayudar a prevenir abusos.
+Proyecto20-10 busca facilitar el descubrimiento y la organización de cursos gratuitos disponibles en distintas plataformas educativas. Las personas podrán consultar un catálogo comunitario y proponer nuevos cursos con su información correspondiente. Cada aporte pasará por un proceso de validación antes de incorporarse al catálogo público. Además, los usuarios podrán organizar cursos en roadmaps personales de aprendizaje.
 
-### 📚 Gestión de cursos
-- ➕ **Create:** crear nuevos cursos.
-- 👀 **Read:** consultar y visualizar cursos.
-- ✏️ **Update:** editar cursos existentes.
-- 🗑️ **Delete:** eliminar cursos.
+## Documentación
 
-### 🧭 Navegación y experiencia de usuario
-- 📄 **Paginación** para navegar por los cursos.
-- 🍔 **Menú hamburguesa** para una navegación sencilla.
-- 🎨 **Diseño claro y minimalista**, inspirado en Google Material Design.
-- 💡 Interfaz intuitiva, accesible y fácil de usar.
+| Documento | Responde la pregunta | Archivo |
+|---|---|---|
+| SPEC | ¿Qué nos pidieron construir y qué decisiones se tomaron? | [docs/SPEC.md](docs/SPEC.md) |
+| PRD | ¿Para quién es el producto, qué problema resuelve y qué queda fuera? | [docs/PRD.md](docs/PRD.md) |
+| TRD | ¿Cómo se construye técnicamente y por qué? | [docs/TRD.md](docs/TRD.md) |
+| UX-UI | ¿Cómo se ve y se comporta la interfaz? | [docs/UX-UI.md](docs/UX-UI.md) |
+| APPFlow | ¿Qué pantallas hay y cómo se navega? | [docs/APPFlow.md](docs/APPFlow.md) |
+| BackendSchema | ¿Qué datos se almacenan y qué API se expone? | [docs/BackendSchema.md](docs/BackendSchema.md) |
+| Implementation Plan | ¿En qué orden se realizará el desarrollo y cómo se verificará? | [docs/IMPLEMENTATION_PLAN.md](docs/IMPLEMENTATION_PLAN.md) |
 
----
+## Cómo revisar este repositorio
 
-## 🎯 Objetivo del proyecto
+- Los archivos Markdown (`.md`) se pueden leer directamente desde GitHub.
+- Los diagramas Mermaid deben estar dentro de bloques de código identificados con `mermaid` para que GitHub los renderice.
+- Para previsualizar la documentación localmente en VS Code, se puede utilizar `Ctrl+Shift+V`.
 
-Mobile First.
+## Estado del trabajo
 
-Desarrollar una aplicación web full stack que integre autenticación, operaciones CRUD y persistencia de datos, utilizando herramientas modernas para el frontend, backend e infraestructura.
+| Instancia | Contenido | Estado |
+|---|---|---|
+| A — Documentación | Repositorio, especificación y seis documentos complementarios | En preparación para revisión docente |
+| B — Desarrollo del MVP | Implementación según el plan aprobado | Pendiente de aprobación docente |
+| C — Testing y despliegue | Pruebas, Docker multi-stage y gestión del cambio | Pendiente |
 
----
+## Versionado
 
-## 🚧 Estado del proyecto
+- **Rama principal:** `main`.
+- **Flujo de trabajo:** los cambios se realizarán en ramas de trabajo cuando corresponda y se integrarán en `main` mediante commits revisables. El detalle del flujo se documentará en `TRD.md`.
+- **Convención de commits:** Conventional Commits, utilizando prefijos como `docs:`, `feat:`, `fix:`, `test:`, `docker:` y `chore:`.
 
-🛠️ **En desarrollo**
+## Referencias de aprendizaje
 
-Las funcionalidades y tecnologías se irán integrando progresivamente a medida que avance el proyecto.
+### Markdown y GitHub
 
----
+- [Markdown Guide — sintaxis básica](https://www.markdownguide.org/basic-syntax/)
+- [Markdown Guide — cheat sheet](https://www.markdownguide.org/cheat-sheet/)
+- [CommonMark](https://commonmark.org/help/)
+- [GitHub — Writing on GitHub](https://docs.github.com/en/get-started/writing-on-github)
+- [GitHub — diagramas Mermaid](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams)
 
-## 👩‍💻 Desarrollo
+### Por tipo de documento
 
-Hecho con 💗, ☕ y muchas ganas de aprender.
+- **PRD:** [Atlassian — plantilla PRD](https://www.atlassian.com/software/confluence/templates/product-requirements)
+- **TRD:** [Design Docs at Google](https://www.industrialempathy.com/posts/design-docs-at-google/)
+- **UX-UI:** [Nielsen Norman Group — Front-End Style Guides](https://www.nngroup.com/articles/front-end-style-guides/) · [Material Design 3](https://m3.material.io/)
+- **APPFlow:** [Nielsen Norman Group — Information Architecture](https://www.nngroup.com/articles/information-architecture-sitemaps/)
+- **BackendSchema:** [Mermaid — ER Diagrams](https://mermaid.js.org/syntax/entityRelationshipDiagram.html) · [PostgreSQL — documentación](https://www.postgresql.org/docs/current/)
+- **Implementation Plan:** [Atlassian — plantilla de plan de proyecto](https://www.atlassian.com/software/confluence/templates/project-plan)
 
-**Proyecto20-10 · 2026**
+## Licencia y uso
+
+Trabajo práctico de Desarrollo de Software — UTN Facultad Regional La Plata, 2026.
