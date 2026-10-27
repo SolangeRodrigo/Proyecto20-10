@@ -1,6 +1,10 @@
 
 FROM node:24-alpine
 
+RUN apk add --no-cache ca-certificates
+
+ENV NODE_OPTIONS=--use-system-ca
+
 WORKDIR /app
 
 RUN npm install --global pnpm@11.20.0
