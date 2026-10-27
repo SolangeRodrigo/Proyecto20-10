@@ -1,0 +1,48 @@
+
+#root {
+  min-height: 100vh;
+}
+
+.contenedor {
+  width: min(900px, 100% - 32px);
+  margin: 0 auto;
+  padding: 64px 0;
+}
+
+.encabezado {
+  padding: 40px;
+  border-radius: 20px;
+  background: #f3e8ff;
+  color: #35204f;
+}
+
+.etiqueta {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.encabezado h1 {
+  margin: 12px 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.encabezado p:last-child {
+  line-height: 1.6;
+}
+
+.cursos {
+  margin-top: 32px;
+  padding: 28px;
+  border: 1px solid #e5e0eb;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.cursos h2 {
+  margin-top: 0;
+}
+
+.cursos li {
+  margin: 12px 0;
+}
