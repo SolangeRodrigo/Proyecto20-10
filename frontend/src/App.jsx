@@ -30,11 +30,16 @@ function App() {
 
   return (
     <main className="contenedor">
-      <header className="encabezado">
-        <p className="etiqueta">PROYECTO20-10</p>
-        <h1>Hoja de ruta de cursos</h1>
-        <p>Explorá los cursos disponibles para organizar tu aprendizaje.</p>
-      </header>
+<header className="encabezado">
+  <img
+    src="/images/solaria.png"
+    alt="Solaria — Tu camino de aprendizaje"
+    className="logo"
+  />
+
+  <h1>Hoja de ruta de cursos</h1>
+  <p>Explorá los cursos disponibles para organizar tu aprendizaje.</p>
+</header>
 
       <section className="cursos" aria-labelledby="titulo-cursos">
         <h2 id="titulo-cursos">Cursos disponibles</h2>
