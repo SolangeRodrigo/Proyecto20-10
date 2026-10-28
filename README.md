@@ -1,8 +1,47 @@
+## Cómo levantar el proyecto
+
+### Requisitos
+
+- Docker Desktop instalado y en ejecución.
+- Git.
+
+### Instalación
+
+Cloná el repositorio y entrá en la carpeta:
+
+```bash
+git clone https://github.com/SolangeRodrigo/Proyecto20-10.git
+cd Proyecto20-10
+```
+
+Copiá el archivo de variables de entorno:
+
+```bash
+cp .env.example .env
+```
+
+Iniciá los servicios de desarrollo:
+
+```bash
+docker compose up --build
+```
+
+### Servicios disponibles
+
+- **Frontend:** http://localhost:5173
+- **Backend:** http://localhost:8000/health
+- **Cursos:** http://localhost:8000/cursos
+- **Documentación de la API:** http://localhost:8000/docs
+
+Para detener los servicios, ejecutá `Ctrl + C`. Para eliminarlos después, ejecutá `docker compose down`.
+
+La base de datos utiliza un volumen persistente de Docker.
+
 # Proyecto20-10
 
 > WebApp de gestión de comunidad de cursos: catálogo comunitario de cursos gratuitos y roadmaps personales de aprendizaje.
 >
-> **Estado:** 📚 Documentación (Instancia A) — desarrollo pendiente de aprobación docente.
+> **Estado:** 🛠️ Instancia B — scaffold y desarrollo del MVP en curso.
 
 **Stack previsto:** React 19 + Vite + pnpm · FastAPI + uv · PostgreSQL 18.6 · Docker Compose (desarrollo)
 
@@ -38,11 +77,14 @@ Proyecto20-10 busca facilitar el descubrimiento y la organización de cursos gra
 | B — Desarrollo del MVP | Implementación según el plan aprobado | Pendiente de aprobación docente |
 | C — Testing y despliegue | Pruebas, Docker multi-stage y gestión del cambio | Pendiente |
 
-## Versionado
 
-- **Rama principal:** `main`.
-- **Flujo de trabajo:** los cambios se realizarán en ramas de trabajo cuando corresponda y se integrarán en `main` mediante commits revisables. El detalle del flujo se documentará en `TRD.md`.
-- **Convención de commits:** Conventional Commits, utilizando prefijos como `docs:`, `feat:`, `fix:`, `test:`, `docker:` y `chore:`.
+## Versionado y flujo de Git
+
+- **`main`:** rama exclusiva para releases versionados (`vX.Y.Z`), con `CHANGELOG.md` actualizado y tags anotados. No se realizan commits directos ni se integran tickets directamente.
+- **`dev`:** rama de integración de los tickets de desarrollo.
+- **Ramas de tickets:** se crean desde `dev` con el formato `feat/T{N}-descripcion-corta` o `fix/T{N}-descripcion-corta` y se integran nuevamente en `dev`.
+- **Convención de commits:** Conventional Commits al 100%, con prefijos como `feat:`, `fix:`, `docs:`, `test:`, `docker:` y `chore:`.
+- **Release:** al completar los tickets, se actualiza el changelog, se integra `dev` en `main` y se crea un tag anotado.
 
 ## Referencias de aprendizaje
 
