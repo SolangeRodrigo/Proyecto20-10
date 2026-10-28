@@ -259,29 +259,17 @@ Esta tabla es un registro de seguimiento. Los estados deben actualizarse durante
 
 
 | # | Tarea | Módulo | Estado inicial | Rama / Commit |
-
 |---|---|---|---|---|
-
-| 0.1 | Estructura de carpetas | M0 | Pendiente | — |
-
-| 0.2 | Docker Compose y PostgreSQL | M0 | Pendiente | — |
-
-| 0.3 | Backend mínimo y health check | M0 | Pendiente | — |
-
-| 0.4 | Frontend y navegación inicial | M0 | Pendiente | — |
-
-| 0.5 | Variables de entorno | M0 | Pendiente | — |
-
-| 0.6 | Instrucciones de ejecución | M0 | Pendiente | — |
-
+| 0.1 | Estructura de carpetas | M0 | Completado | feat/T1-scaffold-estructura |
+| 0.2 | Docker Compose y PostgreSQL | M0 | Completado | feat/T4-docker-compose — cd91888 |
+| 0.3 | Backend mínimo y health check | M0 | Completado | feat/T2-backend-fastapi |
+| 0.4 | Frontend y navegación inicial | M0 | Completado parcialmente: scaffold React + Vite | feat/T3-frontend-react |
+| 0.5 | Variables de entorno | M0 | Completado | feat/T4-docker-compose |
+| 0.6 | Instrucciones de ejecución | M0 | Completado | feat/T4-docker-compose |
 | 1.1–1.6 | Autenticación, permisos y pruebas | M1 | Pendiente | — |
-
 | 2.1–2.8 | Catálogo y pruebas | M2 | Pendiente | — |
-
 | 3.1–3.9 | Aportes, validación e integración | M3 | Pendiente | — |
-
 | 4.1–4.6 | Rutas personales y pruebas | M4 | Pendiente | — |
-
 
 
 ### Flujo de trabajo por tarea
