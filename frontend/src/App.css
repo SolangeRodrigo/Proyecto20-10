@@ -9,40 +9,95 @@
   padding: 64px 0;
 }
 
+/* Encabezado principal */
 .encabezado {
   padding: 40px;
-  border-radius: 20px;
-  background: #f3e8ff;
-  color: #35204f;
+  border: 1px solid #f1c5d6;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #fff0f6 0%, #f8d7e5 100%);
+  color: #903053;
+  box-shadow: 0 12px 32px rgba(144, 48, 83, 0.08);
 }
 
 .etiqueta {
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.12em;
+  color: #b94d79;
 }
 
 .encabezado h1 {
   margin: 12px 0;
   font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.15;
+  color: #903053;
 }
 
 .encabezado p:last-child {
   line-height: 1.6;
+  color: #75445a;
 }
 
+/* Sección de cursos */
 .cursos {
   margin-top: 32px;
   padding: 28px;
-  border: 1px solid #e5e0eb;
-  border-radius: 16px;
-  background: #fff;
+  border: 1px solid #f1d4df;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(144, 48, 83, 0.06);
 }
 
 .cursos h2 {
   margin-top: 0;
+  margin-bottom: 24px;
+  color: #903053;
+  font-size: 1.5rem;
+}
+
+/* Lista de cursos */
+.cursos ul {
+  padding-left: 20px;
 }
 
 .cursos li {
   margin: 12px 0;
+  padding: 14px 16px;
+  border: 1px solid #f5dce6;
+  border-radius: 12px;
+  background: #fff7fa;
+  color: #653047;
+  line-height: 1.5;
+}
+
+/* Mensajes de estado */
+.cursos [role="status"] {
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #fff0f6;
+  color: #903053;
+}
+
+.cursos [role="alert"] {
+  padding: 14px 16px;
+  border: 1px solid #e8a4b8;
+  border-radius: 12px;
+  background: #fff0f0;
+  color: #8c263e;
+}
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 600px) {
+  .contenedor {
+    padding: 28px 0;
+  }
+
+  .encabezado {
+    padding: 26px 22px;
+    border-radius: 18px;
+  }
+
+  .cursos {
+    padding: 22px 18px;
+  }
 }
